@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  caddy:
+    build: $PWD
+    image: caddy-signal-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - $PWD/config/caddy.json:/etc/caddy/caddy.json
+      - caddy_data:/data
+      - caddy_config:/config
+    command: caddy run --config /etc/caddy/caddy.json
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
