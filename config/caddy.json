@@ -45,15 +45,12 @@
                               "cdn.signal.org",
                               "cdn2.signal.org",
                               "cdn3.signal.org",
-                              "api.directory.signal.org",
                               "cdsi.signal.org",
+                              "contentproxy.signal.org",
                               "sfu.voip.signal.org",
                               "svr2.signal.org",
                               "updates.signal.org",
-                              "updates2.signal.org",
-                              "backend1.svr3.signal.org",
-                              "backend2.svr3.signal.org",
-                              "backend3.svr3.signal.org"
+                              "updates2.signal.org"
                             ]
                           }
                         }
